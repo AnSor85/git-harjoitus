@@ -1,0 +1,2 @@
+# git-harjoitus
+Ohjelmistotuotannon harjoitus
