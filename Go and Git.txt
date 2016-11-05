@@ -1,0 +1,48 @@
+1) Luotiin .git niminen repo.
+2) Untracked tarkoittaa ett‰ kyseist‰ tiedostoa ei seurata viel‰.
+3) Staging arealle tuodaan paikalliseen repoon tehdyt muutokset commitoitavaksi.
+4) m on parametri messagen eli viestin luontiin.
+5)
+6) git log n‰ytt‰‰ tehdyt commitit.
+7) push tyˆnt‰‰ repon githubiin et‰repoon.
+8) origin master / repo ja branch johon pushataan
+9) stash palauttaa working directoryn viimeisimp‰‰n kommittiin ja tallettaa lokaalit
+   muutokset talteen.
+10) HEAD on repon viimeisin commit.
+11) tulostus kertoo:	
+
+diff --git a/octocat.txt b/octocat.txt		//mit‰ tiedostoja vertaillaan
+index 7d8d808..e725ef6 100644			//kohdat jossa huomataan ero
+--- a/octocat.txt				//--- tarkoittaa alkuper‰isest‰ poistuu
++++ b/octocat.txt				//+++ tarkoittaa pullatussa on uutta
+@@ -1 +1 @@					//montako rivi‰ poistuu/montako lis‰t‰‰n
+-A Tale of Two Octocats				//t‰sm‰lleen mik‰ poistuu
++[mA Tale of Two Octocats and an Octodog	//t‰sm‰lleen miik‰ lis‰t‰‰n
+
+12) git resetill‰ voi poistaa stagin arealle lis‰ttyj‰ tiedostoja.
+13) checkout-komento palauttaa repon tilan viimeisimp‰‰n committiin.
+14) git branch-komennolla voi luoda uuden haaran joka on kopio msterista.
+    sinne voi tehd‰ muutoksia erill‰‰n masterista. merge-komennolla voidaan
+    yhdist‰‰ haarat. haarassa jossa komento tehd‰‰n on haara johon muutokset tehd‰‰n.
+15) haaran voi asettaa aktiiviseksi git checkout-komennolla kirjoittamalla komennon
+    per‰‰n haaran nimen jonka haluaa aktiiviseksi.
+16) git rm poistaa hautut tiedostot kokonan.
+17)
+
+Updating 3852b4d..ec6888b			//mit‰ branchi‰ p‰ivitet‰‰n, mill‰ branchill‰
+Fast-forward					//?
+blue_octocat.txt | 1 -				// - poistetaan
+octocat.txt | 1 -				// - poistetaan
+octofamily/baby_octocat.txt | 1 -		// - poistetaan
+octofamily/momma_octocat.txt | 1 -		// - poistetaan
+red_octocat.txt | 1 -				// - poistetaan
+5 files changed, 5 deletions(-)			//mit‰ tehtiin
+delete mode 100644 blue_octocat.txt		//mik‰ moodi ajetaan kyseiselle tiedostolle
+delete mode 100644 octocat.txt
+delete mode 100644 octofamily/baby_octocat.txt	//mik‰ moodi ajetaan kyseiselle tiedostolle
+delete mode 100644 octofamily/momma_octocat.txt	//mik‰ moodi ajetaan kyseiselle tiedostolle
+delete mode 100644 red_octocat.txt		//mik‰ moodi ajetaan kyseiselle tiedostolle
+
+18) haara tuhotaan ajamalla git branch-komento -g parametrilla jonka j‰lkeen annetaan
+    tuhottavan haaran nimi.
+19) katso kohta 7)
