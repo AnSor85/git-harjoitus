@@ -4,5 +4,7 @@ class Hello
 public:
 	Hello(void);
 	~Hello(void);
+
+
 };
 
